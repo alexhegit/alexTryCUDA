@@ -40,13 +40,13 @@ The Nsight Compute may provide the details in many different section and recomme
 
 - Launch Statistics
 
-![image-20200411182443344](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411182443344.png)
+![image-20200411190310438](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411190310438.png)
 
 - Occupancy
 
-![image-20200411182714341](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411182714341.png)
+![image-20200411190414198](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411190414198.png)
 
-
+![image-20200411190438569](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411190438569.png)
 
 ## Nsigth systems profiling
 
