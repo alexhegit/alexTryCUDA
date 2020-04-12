@@ -20,7 +20,7 @@ $git clone https://github.com/NVIDIA/cuda-samples/
 
 There is a top Makefile in the root DIR and each sample also has a respective Makefile.  Make and run it.
 
-![image-20200412075121403](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200412075121403.png)
+![image-20200412075121403](../images/image-20200412075121403.png)
 
 
 
@@ -44,25 +44,25 @@ Then open the report file by Nsight Compute to check the details.
 
 ### Current info
 
-![image-20200412080714075](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200412080714075.png)
+![image-20200412080714075](../images/image-20200412080714075.png)
 
 ### GPU Speed Of Light
 
-![image-20200412080958341](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200412080958341.png)
+![image-20200412080958341](../images/image-20200412080958341.png)
 
 The Recommendations will give you according to the real GPU SOL.
 
 ### Kernel Launch statistics
 
-![image-20200412081149398](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200412081149398.png)
+![image-20200412081149398](../images/image-20200412081149398.png)
 
 ### Occupancy
 
-![image-20200412081253591](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200412081253591.png)
+![image-20200412081253591](../images/image-20200412081253591.png)
 
 
 
-![image-20200412081318652](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200412081318652.png)
+![image-20200412081318652](../images/image-20200412081318652.png)
 
 
 
@@ -78,8 +78,8 @@ The "-o" defines the prefix of the report file name and a ".qdrep" and a ".sqlit
 
 Then open the ".qdrep" by Nsight Systems to check the details.
 
-![image-20200412083440674](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200412083440674.png)
+![image-20200412083440674](../images/image-20200412083440674.png)
 
 Zoom in what you want to see in the timelines.
 
-![image-20200412083856795](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200412083856795.png)
+![image-20200412083856795](../images/image-20200412083856795.png)

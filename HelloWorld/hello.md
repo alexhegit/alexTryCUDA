@@ -18,7 +18,7 @@ Nsight compute profiling
 $ nv-nsight-cu-cli hello
 ```
 
-![image-20200411180209324](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411180209324.png)
+![image-20200411180209324](../images/image-20200411180209324.png)
 
 
 
@@ -34,19 +34,19 @@ The Nsight Compute may provide the details in many different section and recomme
 
 - GPU Speed Of Light(SOL)
 
-![image-20200411182216305](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411182216305.png)
+![image-20200411182216305](../images/image-20200411182216305.png)
 
-![image-20200411182336925](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411182336925.png)
+![image-20200411182336925](../images/image-20200411182336925.png)
 
 - Launch Statistics
 
-![image-20200411190310438](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411190310438.png)
+![image-20200411190310438](../images/image-20200411190310438.png)
 
 - Occupancy
 
-![image-20200411190414198](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411190414198.png)
+![image-20200411190414198](../images/image-20200411190414198.png)
 
-![image-20200411190438569](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411190438569.png)
+![image-20200411190438569](../images/image-20200411190438569.png)
 
 ## Nsigth systems profiling
 
@@ -56,13 +56,13 @@ nsys profile -t cuda,osrt -o hello -w true --stats=true ./hello
 
 You will get the report file and also stats output in terminal like these below.
 
-![image-20200411180355269](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411180355269.png)
+![image-20200411180355269](../images/image-20200411180355269.png)
 
 
 
 The report file will be saved like *.qdrep that you can open it by Nsight Systems APP. The GUI show many difference timelines of both CPU and GPU.
 
-![image-20200411183055145](C:\Users\yeh\AppData\Roaming\Typora\typora-user-images\image-20200411183055145.png)
+![image-20200411183055145](../images/image-20200411183055145.png)
 
 
 
