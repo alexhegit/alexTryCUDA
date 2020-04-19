@@ -25,6 +25,14 @@
 #define ui unsigned int
 #endif
 
+void chkCUDAErr(cudaError_t ErrorID)
+{
+    if (ErrorID != CUDA_SUCCESS) {
+        printf("CUDA ERROR :::%s\n", cudaGetErrorString(ErrorID));
+        exit(EXIT_FAILURE);
+    }
+}
+
 int main(int argc, char **argv)
 {
     cudaError_t cudaStatus;
