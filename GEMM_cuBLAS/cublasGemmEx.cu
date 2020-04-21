@@ -6,6 +6,8 @@ cuda中用cublas库做矩阵乘法
 
 如果用CUBLAS_OP_T参数求得的结果是按列排列，做成C形式的矩阵应该还需要转置一下，并且后面跟的参数也不太一样，这个参数我就没再尝试了。
 
+Refer to https://blog.csdn.net/litdaguang/article/details/72630165
+
 代码如下：
 */
 
