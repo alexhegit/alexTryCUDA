@@ -31,6 +31,11 @@
 #endif
 
 /*
+#define __CUDACC_VER_MAJOR__ 10
+#define USE_TENSOR_CORES 1
+*/
+
+/*
 Usage:
 
 The default precision is set based on the architecture and mode.
@@ -194,6 +199,10 @@ int main(int argc, char **argv) {
         inference = argv[1] == inf ? 1 : 0;
     }
 
+    std::cout << "__CUDACC_VER_MAJOR__ is " << __CUDACC_VER_MAJOR__ << std::endl;
+    std::cout << "USE_TENSOR_CORES is " << USE_TENSOR_CORES << std::endl;
+
+
 #if (__CUDACC_VER_MAJOR__ >= 8)
     std::string precision;
     if (inference)
@@ -206,6 +215,21 @@ int main(int argc, char **argv) {
     if (argc > 2) {
         precision = argv[2];
     }
+
+    int GPUid = 0;
+    cudaError_t cudaStatus;
+    cudaDeviceProp GPUprop;
+    if (argc > 3) {
+	GPUid = atoi(argv[3]);
+    }
+
+    cudaStatus = cudaSetDevice(GPUid);
+    if (cudaStatus != cudaSuccess) {
+        fprintf(stderr, "cudaSetDevice failed!");
+	exit(EXIT_FAILURE);
+    }
+    cudaGetDeviceProperties(&GPUprop, GPUid);
+    printf("\n\nSet GPU (%d): %s\n\n", GPUid, GPUprop.name);
 
     cublasHandle_t cublas_handle;
     cublasStatus_t status = cublasCreate(&cublas_handle);
