@@ -63,7 +63,7 @@ int main(int argc, char **argv)
     }
 
     printf("Query the info of the GPU #%d\n", GPUid);    
-    cudaStatus = cudaSetDevice(0);
+    cudaStatus = cudaSetDevice(GPUid);
     if (cudaStatus != cudaSuccess) {
         fprintf(stderr, "cudaSetDevice failed! no ==No CUDA-capable GPU installed?");
         exit(EXIT_FAILURE);
@@ -89,3 +89,4 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
